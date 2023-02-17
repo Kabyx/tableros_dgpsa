@@ -27,4 +27,4 @@ components.html(""""
 </body>
     
 """,
-height=600)
+height=600,width=1600)
