@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DGPSA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagenes/grafico-de-torta.png">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="nav_menu" >
+        <div class="menu_container" id="navbar">
+            <ul class="menu_1">
+                <li><span class="material-icons"></span><a href="index.html" class="menu_1_opcion_1--active">Inicio</a></li>
+                <li><span class="material-icons"></span><a href="bases.html" class="menu_1_opcion_2">Bases</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="background">
+        <div class="powerbi">
+            <div class="powerbi-2022">
+                <div class ="titulo-powerbi-2022"><span>PowerBi - Tableros 2022</span><button style="font-size: 16px; float:right;" onclick="mostrarFunction_2022()" id="mostrar-button-2022" >Mostrar ></button></div>
+            
+                    <div id="powerbi-2022-desplegado" class="powerbi-2022-desplegado" style="display: none;">
+                        <iframe class = "tablero" title="Indicadores - Seguimiento mensual 2022" width="47%" height="580" src="https://app.powerbi.com/view?r=eyJrIjoiZWJkNWIzYjAtYjNiNi00MjQ3LThmODYtZTdjMzA1YTJiYTBmIiwidCI6IjIzNzc0NzJlLTgwMDQtNDY0OC04NDU2LWJkOTY4N2FmYTE1MCIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+                        <iframe class = "tablero" title="ASA - Estadísticas 2022" width="47%" height="580" src="https://app.powerbi.com/view?r=eyJrIjoiYTE5MThiZjctYjIxZC00OWQzLWI3ODAtNzA3OGYwM2EyMmMwIiwidCI6IjIzNzc0NzJlLTgwMDQtNDY0OC04NDU2LWJkOTY4N2FmYTE1MCIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+                        <iframe class = "tablero" title="CT - 2022" width="47%" height="580" src="https://app.powerbi.com/view?r=eyJrIjoiZDE4MmRmZjktMzhmMi00YmVmLWEyOGYtN2FmN2IxNTM0MGFhIiwidCI6IjIzNzc0NzJlLTgwMDQtNDY0OC04NDU2LWJkOTY4N2FmYTE1MCIsImMiOjR9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
+                    </div>
+            </div>
+            <div class="powerbi-2023">
+                <div class="titulo-powerbi-2023"><span>PowerBi - Tableros 2023</span> <button style = "font-size:16px; float:right;" onclick ="mostrarFunction_2023()" id="mostrar-button-2023">Ocultar <</button></div>
+                <div id="powerbi-2023-desplegado" class="powerbi-2023-desplegado"  style="display: block;">
+                    <iframe class="tablero" title="CT - 2023" width="47%" height="580" src="https://app.powerbi.com/view?r=eyJrIjoiZGZhNzFhMDktYTNhNy00YTY1LWExZGMtNDdjZjFiZWE4ZDRkIiwidCI6IjIzNzc0NzJlLTgwMDQtNDY0OC04NDU2LWJkOTY4N2FmYTE1MCIsImMiOjR9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_sd">Sistematización de datos</div>
+    </footer>
+</body>
+
+</html>

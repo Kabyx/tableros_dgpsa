@@ -1,0 +1,134 @@
+body{
+    font-family:'Poppins',sans-serif;
+    padding:0;
+    margin:0;
+
+}
+
+nav{
+    position:absolute;
+    width:100%;
+    color:white;
+    background-color:#b1ccf3;
+    box-shadow: 0px 3px 0 0 rgba(0, 0, 0, 0.14);
+}
+
+#navbar{
+    width:100%;
+    height:80px;
+    position:fixed;
+    overflow:hidden;
+    color:white;
+    background-color:#b1ccf3;
+    box-shadow: 0px 3px 0 0 rgba(0, 0, 0, 0.14);
+}
+
+#navbar a{
+    float:left;
+    color:#3b3b3b;
+    text-align: center;
+    padding:15px;
+    text-decoration:none;
+    border-radius: 16px;
+}
+
+
+ul{
+    list-style:none;
+}
+
+
+
+li{
+    font-size:18px;
+    padding:10px;
+    text-align:center;
+    display:inline;
+}
+
+a:hover{
+    color:black;
+    background-color:rgba(238, 236, 236, 0.911);
+    border-radius: 16px;
+    transition:0.5s;
+}
+
+
+
+.titulo-powerbi-2022,.titulo-powerbi-2023{
+    padding-top:30px;
+    width:800px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.14);
+    font-size: 24px;
+    opacity:1;
+    transition: all 1s;
+}
+button{
+
+    color:#525151;
+    font-size:12px;
+    cursor:pointer;
+    border-radius: 16px;
+    text-align:center;
+    background:#b1ccf3;
+    border:white;
+    transition-duration:0.4s;
+
+}
+
+button:hover{
+    color:rgba(253, 250, 250, 0.918);
+    background-color:rgb(109, 162, 236);
+    transition-duration:0.4s;
+}
+
+
+
+.powerbi{
+    padding-top:10%;
+    padding-left:3%;
+    
+}
+
+#powerbi-2022-desplegado{
+    display:none;
+
+}
+
+#powerbi-2023-desplegado{
+    display:block;
+
+}
+
+
+.tablero{
+    padding:10px;
+    box-shadow: 2px 3px 0 0 rgba(0, 0, 0, 0.14);
+
+}
+
+footer{
+    
+    margin-top: 600px;
+    height:100px;
+    width:100%;
+    text-align:center;
+    background-color:#b1ccf3;
+    color:#776d62da;
+    font-size:24px;
+
+}
+.footer_sd{
+    background-color:#c8d8ee;
+}
+
+
+.sticky{
+    position:fixed;
+    top:0;
+    width:100%
+}
+
+.sticky + .content {
+    padding-top: 60px;
+  }
