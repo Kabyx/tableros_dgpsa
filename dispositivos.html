@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DGPSA</title>
+    <link rel="stylesheet" href="css/styledispositivos.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagenes/grafico-de-torta.png">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="nav_menu" >
+        <div class="menu_container" id="navbar">
+            <ul class="menu_1">
+                <li><span class="material-icons"></span><a href="index.html" class="menu_1_opcion_1--active">Inicio</a></li>
+                <li><span class="material-icons"></span><a href="bases.html" class="menu_1_opcion_2">Bases</a></li>
+                <li><span class="material-icons"></span><a href="estadisticas.html" class="menu_1_opcion_2">Tableros</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="background">
+        <div class = "container">
+            <iframe class = "items" id="mapa_google" src="" width="65%" height="600" style="border:0; display:none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class = "items" id="container_referencias">
+                <div id="titulo_referencias">Dispositivo:</div>
+                <div id="datos_referencias">
+                    <ul class="indicadores_dispositivos"><span style="font-size:18px;">Nombre de dispositivo</span>
+                        <li></li>
+                            <select onchange = "mostrar_map_comunidades()" class="box_dispositivos" id ="box_dispositivos">
+                                <option value="1">Selecciona un dispositivo</option>
+                                <option value="2">El Reparo</option>
+                                <option value="3">El Almendro</option>
+                                <option value="4">Raices - Coincidencias</option>
+                            </select>
+                        <li><span id="container_modalidades-title" style="font-size:18px;">Cantidad de becas por convenio:</span></li>
+                        <li></li>
+                        <div id = "container_modalidades" class = "container_modalidades" style="text-align:left; display:none;">
+                            <div id =container_ambulatorios>
+                                <li id="ambulatorios_baja_intensidad">Ambulatorio BAJA intensidad: <span id="ambulatorios_baja_intensidad_cant">0</span></li>
+                                <li id="ambulatorios_alta_intensidad">Ambulatorio ALTA intensidad: <span id="ambulatorios_alta_intensidad_cant">0</span></li>
+                            </div>
+                            <div id = container_residenciales style = "color:rgba(70, 70, 70, 0.897);">
+                                <li id="residenciales_bajo">Residencial BAJO nivel de apoyo: <span id="residenciales_bajo_cant">0</span></li>
+                                <li id="residenciales_alto">Residencial ALTO nivel de apoyo: <span id="residenciales_alto_cant">0</span></li> 
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_sd">Sistematización de datos</div>
+    </footer>
+</body>
+
+</html>
