@@ -63,7 +63,10 @@ function mostrar_map_comunidades(){
     mapa.style.display = "none"
     ambulatorios_baja_intensidad_cant.innerHTML = "0"
     ambulatorios_alta_intensidad_cant.innerHTML = "0"
+    document.getElementById("box_dispositivos").style = "background-color: #f59a94"
     document.getElementById("container_modalidades").style.display = "none"
+    document.getElementById("vinculo_dispositivo_variable").innerHTML = ""
+    document.getElementById("direccion_dispositivo_span").innerHTML= ""
   }
   
   if(comunidad === "El Reparo")
@@ -74,7 +77,11 @@ function mostrar_map_comunidades(){
     ambulatorios_alta_intensidad_cant.innerHTML = "0"
     residenciales_bajo_cant.innerHTML= "7"
     residenciales_alto_cant.innerHTML= "7"
+    document.getElementById("box_dispositivos").style = "background-color: #f59a94"
     document.getElementById("container_modalidades").style.display = "block"
+    document.getElementById("vinculo_dispositivo_variable").innerHTML = "Conveniado"
+    document.getElementById("vinculo_dispositivo_variable").style = "color:red"
+    document.getElementById("direccion_dispositivo_span").innerHTML= "Av. Mendoza 2812"
   }
 
   if (comunidad === "El Almendro") {
@@ -84,7 +91,11 @@ function mostrar_map_comunidades(){
     ambulatorios_alta_intensidad_cant.innerHTML = "8"
     residenciales_bajo_cant.innerHTML= "0"
     residenciales_alto_cant.innerHTML= "0"
+    document.getElementById("box_dispositivos").style = "background-color: #f59a94"
     document.getElementById("container_modalidades").style.display = "block"
+    document.getElementById("vinculo_dispositivo_variable").innerHTML = "Conveniado"
+    document.getElementById("vinculo_dispositivo_variable").style = "color:red"
+    document.getElementById("direccion_dispositivo_span").innerHTML= "Prelado Don Buenaventura Risso Patrón 63"
   }
 
   if(comunidad ==="Raices - Coincidencias")
@@ -95,9 +106,28 @@ function mostrar_map_comunidades(){
     ambulatorios_alta_intensidad_cant.innerHTML = "0"
     residenciales_bajo_cant.innerHTML= "14"
     residenciales_alto_cant.innerHTML= "12"
+    document.getElementById("box_dispositivos").style = "background-color: #f59a94"
     document.getElementById("container_modalidades").style.display = "block"
+    document.getElementById("vinculo_dispositivo_variable").innerHTML = "Conveniado"
+    document.getElementById("vinculo_dispositivo_variable").style = "color:red"
+    document.getElementById("direccion_dispositivo_span").innerHTML= "Calle 65"
 
   }
 
+  if(comunidad ==="Casa Puerto")
+  {
+    mapa.style.display ="inline-block"
+    mapa.src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3100.126785456574!2d-58.451260403142484!3d-34.592274707129576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb51e3d87bae3%3A0xb67b43af3e68c52c!2sCasa%20Puerto!5e0!3m2!1ses!2sar!4v1680198767105!5m2!1ses!2sar"
+    ambulatorios_baja_intensidad_cant.innerHTML = "0"
+    ambulatorios_alta_intensidad_cant.innerHTML = "0"
+    residenciales_bajo_cant.innerHTML= "0"
+    residenciales_alto_cant.innerHTML= "0"
+    document.getElementById("box_dispositivos").style = "background-color: rgb(159, 199, 212)"
+    document.getElementById("container_modalidades").style.display = "none"
+    document.getElementById("vinculo_dispositivo_variable").innerHTML = "Propio"
+    document.getElementById("vinculo_dispositivo_variable").style = "color:blue"
+    document.getElementById("direccion_dispositivo_span").innerHTML= "Guzman 90"
+
+  }
 
 }
